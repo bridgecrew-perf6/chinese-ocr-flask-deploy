@@ -1,0 +1,45 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="container-fluid">
+  
+  <div class="title">
+    <h3>Chinese OCR</h3>
+    <p class='mt-lg-3 mb-lg-4'>
+      A web app demo for chinese OCR. Input image URL or upload locally, click 'SUBMIT' to see result.
+      
+    </p>
+  </div>
+  <div class='row'>
+    <div class='col-4'>
+      <input id="image-url" type="search" class="form-control" placeholder="Input image URL" aria-label="Search Dashboard">
+    </div>
+    <div class='col-2'>
+      <div style="margin-bottom: 2rem;">
+        <input type="button" value="Submit" class="button" onclick="submitImage();" />
+        <input type="button" value="Clear" class="button" onclick="clearImage();" />
+      </div>
+    </div>
+  </div>
+  
+  <div class='row'>
+    <div class='col-6 text-left'>
+      <div class="panel">
+        <input id="file-upload" class="hidden" type="file" accept="image/x-png,image/gif,image/jpeg" />
+        <label for="file-upload" id="file-drag" class="upload-box">
+          <div id="upload-caption">Drop image here or click to select</div>
+          <img id="image-preview" class="hidden" />
+          <svg id="loader" class="hidden" viewBox="0 0 32 32" width="32" height="32">
+            <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+          </svg>
+        </label>
+      </div>
+    </div>
+    <div class='col-6'>
+      <table class="table table-responsive" id='pred-table'>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

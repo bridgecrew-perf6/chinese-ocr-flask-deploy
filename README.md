@@ -4,9 +4,9 @@
 
 Model coverted from [chinese-ocr](https://github.com/chineseocr/chineseocr)
 
-Read full tutorial at my blog ==[here](https://luna-profile.herokuapp.com/view_post/34)== !
+Read full tutorial at my blog [here](https://luna-profile.herokuapp.com/view_post/34) !
  
- ![](README_md_files%5Cimage.png?v=1&type=image)
+ ![](README_md_files/image.png?v=1&type=image)
  
  
 
